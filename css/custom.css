@@ -1,0 +1,139 @@
+:root {
+  --color-navy: #0A2F5A;
+  --color-red: #B22234;
+  --color-white: #FFFFFF;
+  --color-dark: #1F2128;
+  --color-light-gray: #F5F5F5;
+  --color-silver: #C0C0C0;
+  --color-gold: #FFD700;
+}
+
+.videoAside{
+  background-image: url("https://lirp.cdn-website.com/c262fe7c/dms3rep/multi/opt/beattie-plumbing_197136764-2880w.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.pageHeaderHolder.pageHeaderHolder02{
+  display: flex;
+  align-items: center;
+}
+
+.color-dark{
+    color: var(--color-dark) !important;
+}
+
+.welcome {
+  background: url(../images/welcome-bg.png) left center no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 180px 0;
+}
+.welcome .welcome-content {
+  width: 100%;
+  position: relative;
+}
+.welcome .welcome-content .welcome-text h1 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 1.3px;
+  margin-bottom: 35px;
+  color: #1F2128;
+}
+.welcome .welcome-content .welcome-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.53px;
+  color: #606060;
+  margin-bottom: 35px;
+}
+.welcome .welcome-content .slider-wrapper {
+  position: absolute;
+  top: 0px;
+  padding-left: 70px;
+}
+.welcome .welcome-content .slider-wrapper .base {
+  position: absolute;
+  width: 60%;
+  height: 230px;
+  left: 0px;
+  bottom: 0px;
+  background: #fff;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.13);
+}
+.welcome .welcome-content .slider-wrapper .base .prev {
+  position: absolute;
+  right: 70px;
+  bottom: 33px;
+  font-size: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  z-index: 999;
+}
+.welcome .welcome-content .slider-wrapper .base .next {
+  position: absolute;
+  right: 30px;
+  bottom: 33px;
+  font-size: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  z-index: 999;
+}
+.welcome .welcome-content .slider-wrapper .owl-carousel {
+  position: relative;
+  z-index: 2;
+}
+.welcome .welcome-content .slider-wrapper .owl-carousel .item .img {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  height: 200px;
+}
+.welcome .welcome-content .slider-wrapper .owl-carousel .item .text {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+.welcome .welcome-content .slider-wrapper .owl-carousel .item .text h5 {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.53px;
+  margin-bottom: 10px;
+  color: #1F2128;
+}
+.welcome .welcome-content .slider-wrapper .owl-carousel .item .text p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #606060;
+  letter-spacing: 0.47px;
+  line-height: 26px;
+}
+.welcome .welcome-content .slider-wrapper .owl-carousel .firstActiveItem .text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .welcome {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+  .welcome .welcome-content .slider-wrapper .base {
+    width: 100%;
+    left: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .welcome .welcome-content .welcome-text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .welcome .welcome-content .welcome-text a {
+    margin: auto;
+  }
+}
